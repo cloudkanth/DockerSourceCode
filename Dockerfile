@@ -1,4 +1,4 @@
-
+#pardha docker file with user pardha
 #Docker build with git ingegration
 FROM ubuntu:latest
 MAINTAINER pardha <koye.pegasian@gmail.com>
@@ -7,5 +7,7 @@ RUN apt-get update -y
 RUN apt-get install -y ssh telnet
 RUN apt-get install -y openjdk-8-jre
 RUN apt-get install -y openjdk-8-jdk
-
+RUN useradd -ms /bin/bash pardha
+USER pardha
+RUN echo "This file is created by pardha" > vi pardha.txt
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
