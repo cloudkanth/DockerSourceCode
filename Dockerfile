@@ -11,4 +11,4 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
 RUN useradd -ms /bin/bash pardha
 
 USER pardha
-RUN echo "This file is created by pardha" > pardha.txt
+CMD echo "This file is created by pardha" > pardha.txt
