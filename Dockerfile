@@ -9,5 +9,5 @@ RUN apt-get install -y openjdk-8-jre
 RUN apt-get install -y openjdk-8-jdk
 RUN useradd -ms /bin/bash pardha
 USER pardha
-RUN echo "This file is created by pardha" > vi pardha.txt
+RUN echo "This file is created by pardha" > pardha.txt
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
